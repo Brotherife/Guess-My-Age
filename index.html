@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Guess-My-Age</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <header class="header-center">
+      <p class="welcome-msg">
+        Hello, <span class="player-name">devs</span>. Let`s play a game.
+      </p>
+      <div class="again-between">
+        <button class="again-btn">Play Again!</button>
+        <p class="between">( Btw 15 & 70 )</p>
+      </div>
+      <h2 class="game-title">Guess My Age</h2>
+    </header>
+    <section class="main-game">
+      <div class="age">?</div>
+      <div class="main-game-left-right">
+        <div class="left">
+          <input type="number" id="guess-age" />
+          <button type="submit" class="btn-check">Check!</button>
+        </div>
+        <div class="right">
+          <p class="message">Start guessing...</p>
+          <p class="label-score">💯 Score: <span class="score">20</span></p>
+          <p class="label-highscore">
+            🥇 Highscore: <span class="highscore">0</span>
+          </p>
+        </div>
+      </div>
+      <h2 class="win hidden">YOU ROCK!!! 🚀🚀🚀</h2>
+    </section>
+    <div class="overlay">
+      <div class="modal">
+        <h2 class="display-name">Set Display Name</h2>
+        <input
+          type="text"
+          class="user-name-input"
+          placeholder="eg: brotherife"
+        />
+        <p class="invalid"></p>
+        <button type="submit" class="btn-submit">Submit</button>
+      </div>
+    </div>
+    <script src="script.js"></script>
+  </body>
+</html>
