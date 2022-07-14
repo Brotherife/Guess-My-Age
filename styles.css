@@ -101,9 +101,9 @@ body {
   display: block;
   border: 2px solid #eee;
   background: none;
-  width: 10rem;
+  width: 6rem;
   color: #eee;
-  padding: 1.5rem;
+  padding: 0.5rem;
   outline: none;
   font-size: 2rem;
   text-align: center;
@@ -116,7 +116,7 @@ body {
 .btn-check {
   display: block;
   margin: 0.6rem auto;
-  padding: 0.5rem 2rem;
+  padding: 0.5rem 1rem;
   font-size: 16px;
   font-weight: 500;
   background-color: #eee;
@@ -134,21 +134,20 @@ body {
 
 .message {
   margin-top: -20px;
-  letter-spacing: 0.2rem;
   text-transform: capitalize;
-  font-size: 20px;
 }
 
 .label-score {
   margin-top: 50px;
-  letter-spacing: 0.2rem;
-  font-size: 20px;
 }
 
 .label-highscore {
-  letter-spacing: 0.2rem;
   margin-top: 10px;
-  font-size: 20px;
+}
+
+.message,.label-score,.label-highscore {
+  letter-spacing: 0.1rem;
+  font-size: 15px;
 }
 
 .win {
@@ -244,4 +243,24 @@ body {
 
 .hidden {
   display: none;
+}
+
+@media screen and (min-width:600px) {
+ .main-game-left-right {
+   justify-content: space-around;
+ }
+
+ .message,.label-score,.label-highscore {
+   letter-spacing: 0.2rem;
+   font-size:20px;
+ }
+
+ #guess-age{
+   width: 10rem;
+   padding: 1.5rem;
+ }
+
+ .btn-check {
+   padding: 0.5rem 2rem;
+ }
 }
