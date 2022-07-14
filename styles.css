@@ -89,8 +89,12 @@ body {
 .main-game-left-right {
   margin-top: 6rem;
   display: flex;
-  justify-content: space-around;
+  justify-content: center;
   align-items: center;
+}
+
+.left,.right{
+  margin:0 1rem;
 }
 
 #guess-age {
