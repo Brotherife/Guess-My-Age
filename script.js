@@ -54,15 +54,15 @@ btnCheck.addEventListener('click', function () {
   const guessAge = Number(document.getElementById('guess-age').value);
   if (!guessAge) {
     displayMessage('no number');
-  } else if (guessAge === secretAge && score > highscore) {
+  } else if (guessAge === secretAge) {
     age.textContent = secretAge;
     displayMessage('correct age');
-    // if (score > highscore) {
-    highscore = score;
-    document.querySelector('.highscore').textContent = highscore;
     document.querySelector('body').style.backgroundColor = '#60b347';
     win.classList.remove('hidden');
-    // }
+    if (score > highscore) {
+    highscore = score;
+    document.querySelector('.highscore').textContent = highscore;
+    }
   } else if (guessAge !== secretAge && score > 1) {
     displayMessage(guessAge > secretAge ? 'too high' : 'too low');
     score--;
